@@ -62,6 +62,7 @@ def rangeAndShift_worker(observations, ephemeris, cell_area=10):
     cell.getObservations(observations)
 
     if len(cell.observations) != 0:
+        print(11111)
 
         # Create test orbit with state of orbit at visit time
         test_orbit = TestOrbit(
@@ -79,6 +80,7 @@ def rangeAndShift_worker(observations, ephemeris, cell_area=10):
         projected_observations = cell.observations
 
     else:
+        print(22222)
 
         projected_observations = pd.DataFrame()
 
